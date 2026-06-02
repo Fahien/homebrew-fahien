@@ -15,7 +15,7 @@ cask "vulkan-sdk" do
     executable: "vulkansdk-macOS-#{version}.app/Contents/MacOS/vulkansdk-macOS-#{version}",
     args: [
       "--root", "#{staged_path}/#{token}", "--accept-licenses", "--default-answer",
-      "--confirm-command", "install"
+      "--confirm-command", "install", "com.lunarg.vulkan.kosmic"
     ],
   }
 
