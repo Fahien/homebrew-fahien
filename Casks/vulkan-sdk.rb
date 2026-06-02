@@ -5,9 +5,9 @@ cask "vulkan-sdk" do
   name "Vulkan SDK"
   desc "The Vulkan SDK enables Vulkan developers to develop Vulkan applications"
   homepage "https://vulkan.lunarg.com/sdk/home"
-  url "https://sdk.lunarg.com/sdk/download/1.4.335.1/mac/vulkansdk-macos-1.4.335.1.zip"
-  sha256 "0d24d7527149eb41947a7093036026b0540a10d28d46162a3e6f652e892aa104"
-  version "1.4.335.1"
+  url "https://sdk.lunarg.com/sdk/download/1.4.350.0/mac/vulkansdk-macos-1.4.350.0.zip"
+  sha256 "7acc181b8fd9b4781bf51ed086222ec95d22004b85b3d0a6683a7e48ca5a1679"
+  version "1.4.350.0"
 
   depends_on formula: "python3"
 
