@@ -9,6 +9,14 @@ cask "vulkan-sdk" do
   sha256 "539433589c83522e6f31b1c7b418a4167e21597a4a361ab119e1dc0760cf3865"
   version "1.4.357.0"
 
+  livecheck do
+    url "https://vulkan.lunarg.com/sdk/latest/mac.json"
+    strategy :json do |json|
+      json["mac"]
+    end
+  end
+
+  depends_on :macos
   depends_on formula: "python3"
 
   installer script: {
@@ -79,4 +87,8 @@ cask "vulkan-sdk" do
   uninstall delete: [
     "#{staged_path}/#{token}"
   ]
+
+  caveats do
+    license "https://vulkan.lunarg.com/license/"
+  end
 end
